@@ -1,0 +1,47 @@
+extends layout
+
+block content
+  div#g1.row
+    div#groop.col-sm-4.col-sm-offset-4.col-xs-6.col-xs-offset-3
+  div#g2.row
+    h1 CHAT. SOCIALIZE. CONNECT.
+    p.col-sm-6.col-sm-offset-3.col-xs-10.col-xs-offset-1 Uygulamamız yayınlanmadan önceki gelişmelerden haberdar olmak için e-posta adresinizi bırakın. Go Groop!
+  .container#mid
+    .container
+      form
+        .form-group.col-sm-4.col-sm-offset-3.col-xs-6.col-xs-offset-1
+          input#email.form-control(type='text', placeholder='E-posta', required)
+          label(for='email')
+        button.btn.btn-success.col-sm-2.col-xs-4(type='submit') Kaydol
+    div#foot
+      div.col-sm-2.col-xs-12
+        p Bize ulaşmak için:    
+      div.col-sm-3.col-xs-12
+        p#ulasim info@groopapp.com
+      div.col-sm-3.col-sm-offset-2.col-xs-12
+        p#basin Basında groop
+      div.col-sm-2.col-xs-12
+        p#gizlilik Gizlilik
+  #mbasin.modal.fade(role='dialog')
+    .modal-dialog
+      .modal-content
+        .modal-header
+          h1.modal-title Basında GROOP
+        .modal-body
+          .row
+            .col-xs-6
+              #hurriyet
+            .col-xs-6
+              h4 Hakan Baş ile Groop Röportajı
+              p Dünyanın en iyi 100 girişimcisi arasında gösterilen Hakan Baş, yeni girişimi ‘Groop’ ile internet üzerinden yeni nesil sohbet (chat) dönemi başlatmaya hazırlanıyor. 
+              button#hur.btn-primary Makaleye git
+          .row
+            .col-xs-6
+              #webrazzi
+            .col-xs-6
+              h4 Hakan Baş’ın yatırımcısı olduğu Groop, iddialı bir sosyal chat uygulaması
+              p Türkiye’de yüksek başarı elde eden Peak Games, Krombera ve Lidyana girişimleriyle tanıdığımız Hakan Baş, bu kez unicorn adayı olmasını umduğu yeni bir girişimin ilk sinyalini verdi.
+              button#razzi.btn-primary Makaleye git
+        .modal-footer
+          button.btn.btn-default(type='button', data-dismiss='modal') Kapat          
+  script(src="/javascripts/index.js")
